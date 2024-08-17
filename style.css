@@ -13,7 +13,8 @@ body {
 }
 
 h1,h2 {
-    color: #c5f1b8;
+    text-decoration: none;
+    color:orange;
 }
 
 p {
