@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
     background-color: #121212;
-    font-family: "Jersey 10", sans-serif;
+    font-family: "Courier Prime", monospace;
     font-weight: 400;
-    font-style: normal;
     font-size: 24px;
     height: 100vh;
     display: flex;
@@ -12,7 +11,13 @@ body {
     flex-direction: column;
 }
 
-h1,h2 {
+h1 {
+    text-align: center;
+    text-decoration: none;
+    color: orange;
+}
+
+h2 {
     text-decoration: none;
     color: orange;
 }
