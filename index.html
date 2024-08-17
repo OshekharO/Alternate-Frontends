@@ -32,7 +32,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('https://raw.githack.com/OshekharO/Alternate-Frontends/main/data.json')
+            fetch('data.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error(`HTTP error! status: ${response.status}`);
