@@ -1,0 +1,37 @@
+{
+    "privateFrontends": [
+        {"name": "Pussthecat", "url": "https://pussthecat.org", "description": "provides access to open source services"},
+        {"name": "Aishiteiru", "url": "https://aishiteiru.moe"},
+        {"name": "Pussthecat", "url": "https://mint.lgbt", "description": "providing privacy-respecting FOSS services"},
+        {"name": "Drgns", "url": "https://drgns.space", "description": "free libre services for everyone"},
+        {"name": "PrivacyRedirect", "url": "https://privacyredirect.com"},
+        {"name": "Whatever", "url": "https://whatever.social", "description": "collection of FOSS alternative"},
+        {"name": "Kavin", "url": "https://kavin.rocks"},
+        {"name": "Reallyaweso", "url": "https://reallyaweso.me", "description": "trying to provide as many useful services"},
+        {"name": "Einfachzocken", "url": "https://www.einfachzocken.eu"},
+        {"name": "FrontendFriendly", "url": "https://frontendfriendly.xyz", "description": "host privacy friendly frontends"},
+        {"name": "PrivacyDev", "url": "https://privacydev.net"},
+        {"name": "Ducks", "url": "https://ducks.party"},
+        {"name": "Vern", "url": "https://vern.cc", "description": "host a lot of services"},
+        {"name": "Lunar", "url": "https://lunar.icu", "description": "Data protection is our top priority"},
+        {"name": "Lumaeris", "url": "https://lumaeris.com"},
+        {"name": "Neco", "url": "https://neco.lol", "description": "hosts various services"},
+        {"name": "Bloat", "url": "https://bloat.cat"},
+    ],
+    "searchEngines": [
+        {"name": "DuckDuckGo", "url": "https://duckduckgo.com"},
+        {"name": "Startpage", "url": "https://www.startpage.com"},
+        {"name": "Brave", "url": "https://search.brave.com"},
+        {"name": "Ecosia", "url": "https://www.ecosia.org"},
+    ],
+    "other": [
+        {"name": "Mass-CC-Checker", "url": "https://github.com/OshekharO/MASS-CC-CHECKER"},
+        {"name": "KE1-CC-Checker", "url": "https://github.com/OshekharO/KE1-CC-CHECKER"},
+        {"name": "CF-Reverse-Proxy", "url": "https://github.com/OshekharO/CF-REVERSE-PROXY"},
+        {"name": "Web-Indexer", "url": "https://github.com/OshekharO/Web-Indexer"},
+        {"name": "News-API", "url": "https://github.com/OshekharO/News-API"},
+        {"name": "OmniScrape", "url": "https://github.com/OshekharO/OmniScrape"},
+        {"name": "Mobile-Console", "url": "https://github.com/OshekharO/Mobile-Console"},
+        {"name": "GPT-AI", "url": "https://github.com/OshekharO/GPT-AI"},
+    ]
+}
