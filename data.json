@@ -2,7 +2,8 @@
     "privateFrontends": [
         {"name": "Pussthecat", "url": "https://pussthecat.org", "description": "provides access to open source services"},
         {"name": "Aishiteiru", "url": "https://aishiteiru.moe"},
-        {"name": "Pussthecat", "url": "https://mint.lgbt", "description": "providing privacy-respecting FOSS services"},
+        {"name": "Perennialte", "url": "https://perennialte.ch", "description": "providing free access to open-source web services"},
+        {"name": "Mint", "url": "https://mint.lgbt", "description": "providing privacy-respecting FOSS services"},
         {"name": "Drgns", "url": "https://drgns.space", "description": "free libre services for everyone"},
         {"name": "PrivacyRedirect", "url": "https://privacyredirect.com"},
         {"name": "Whatever", "url": "https://whatever.social", "description": "collection of FOSS alternative"},
