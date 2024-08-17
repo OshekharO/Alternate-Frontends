@@ -16,13 +16,13 @@
         {"name": "Lunar", "url": "https://lunar.icu", "description": "Data protection is our top priority"},
         {"name": "Lumaeris", "url": "https://lumaeris.com"},
         {"name": "Neco", "url": "https://neco.lol", "description": "hosts various services"},
-        {"name": "Bloat", "url": "https://bloat.cat"},
+        {"name": "Bloat", "url": "https://bloat.cat"}
     ],
     "searchEngines": [
         {"name": "DuckDuckGo", "url": "https://duckduckgo.com"},
         {"name": "Startpage", "url": "https://www.startpage.com"},
         {"name": "Brave", "url": "https://search.brave.com"},
-        {"name": "Ecosia", "url": "https://www.ecosia.org"},
+        {"name": "Ecosia", "url": "https://www.ecosia.org"}
     ],
     "other": [
         {"name": "Mass-CC-Checker", "url": "https://github.com/OshekharO/MASS-CC-CHECKER"},
@@ -32,6 +32,6 @@
         {"name": "News-API", "url": "https://github.com/OshekharO/News-API"},
         {"name": "OmniScrape", "url": "https://github.com/OshekharO/OmniScrape"},
         {"name": "Mobile-Console", "url": "https://github.com/OshekharO/Mobile-Console"},
-        {"name": "GPT-AI", "url": "https://github.com/OshekharO/GPT-AI"},
+        {"name": "GPT-AI", "url": "https://github.com/OshekharO/GPT-AI"}
     ]
 }
