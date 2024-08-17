@@ -1,52 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --background-color: #121212;
+    --text-color: #CCC;
+    --heading-color: orange;
+    --link-color: #84e270;
+    --time-color: lightblue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #121212;
+    background-color: var(--background-color);
     font-family: "Courier Prime", monospace;
     font-weight: 400;
     font-size: 18px;
-    height: 100vh;
+    line-height: 1.6;
+    color: var(--text-color);
+    min-height: 100vh;
     display: flex;
     margin: 0;
     flex-direction: column;
 }
 
+h1, h2 {
+    color: var(--heading-color);
+}
+
 h1 {
     text-align: center;
-    text-decoration: none;
-    color: orange;
-}
-
-h2 {
-    text-decoration: none;
-    color: orange;
-}
-
-p {
-    color: white;
 }
 
 a {
-    color: #84e270;
+    color: var(--link-color);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 li {
-    color: #CCC;
     word-wrap: break-word;
     list-style: square;
+    margin-bottom: 0.5em;
 }
 
-table,tr,td {
+table {
     border-collapse: collapse;
-    color: white;
-    border: solid thin;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+tr, td {
+    border: 1px solid var(--text-color);
     padding: 0.5rem;
 }
 
 .posts a {
     display: block;
-    margin: 1rem;
+    margin: 1rem 0;
 }
 
 hr {
@@ -54,30 +74,45 @@ hr {
     height: 2px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    margin: 2em 0;
 }
 
 time {
-    color: lightblue;
+    color: var(--time-color);
 }
 
 main {
-    margin: 0 1em;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em;
+    flex-grow: 1;
 }
 
 header {
     text-align: center;
-    margin: 0.5em;
+    padding: 1em 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
 }
 
 footer {
     margin-top: auto;
-    color: white;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 1em 0;
 }
 
 @media only screen and (max-width: 768px) {
-    main a[href="/blog"] {
-        float: right;
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0 0.5em;
     }
 }
