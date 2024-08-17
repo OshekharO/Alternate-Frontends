@@ -8,6 +8,7 @@
         {"name": "PrivacyRedirect", "url": "https://privacyredirect.com"},
         {"name": "Whatever", "url": "https://whatever.social", "description": "collection of FOSS alternative"},
         {"name": "Kavin", "url": "https://kavin.rocks"},
+        {"name": "NerdVPN", "url": "https://nerdvpn.de", "description": "privacy focused services and alternative frontends"},
         {"name": "Reallyaweso", "url": "https://reallyaweso.me", "description": "trying to provide as many useful services"},
         {"name": "Einfachzocken", "url": "https://www.einfachzocken.eu"},
         {"name": "FrontendFriendly", "url": "https://frontendfriendly.xyz", "description": "host privacy friendly frontends"},
