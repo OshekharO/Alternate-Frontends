@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free public privacy friendly services and frontends">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alternate Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/blog">Blog</a>
+        <a href="/contact">Contact</a>
+    </header>
+    <main>
+        <h1>Welcome To Alternate Index</h1>
+        
+        <h2>Private frontends</h2>
+        <div id="privateFrontends"></div>
+
+        <h2>Search Engines</h2>
+        <div id="searchEngines"></div>
+
+        <h2>Other</h2>
+        <div id="services"></div>
+    </main>
+    <footer>2024 <a href="https://github.com/OshekharO/Alternate-Frontends">Saksham Shekher</a></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('data.json')
+                .then(response => response.json())
+                .then(data => {
+                    const categories = ['privateFrontends', 'searchEngines', 'services'];
+                    
+                    categories.forEach(category => {
+                        const container = document.getElementById(category);
+                        data[category].forEach(item => {
+                            const ul = document.createElement('ul');
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            
+                            a.href = item.url;
+                            a.textContent = item.name;
+                            
+                            if (item.description) {
+                                const span = document.createElement('span');
+                                span.textContent = ` ${item.description}`;
+                                li.appendChild(a);
+                                li.appendChild(span);
+                            } else {
+                                li.appendChild(a);
+                            }
+                            
+                            ul.appendChild(li);
+                            container.appendChild(ul);
+                        });
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        });
+    </script>
+</body>
+</html>
