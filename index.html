@@ -29,15 +29,30 @@
     </main>
     <footer>2024 <a href="https://github.com/OshekharO/Alternate-Frontends">Saksham Shekher</a></footer>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('data.json')
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
                 .then(data => {
+                    console.log('Data fetched successfully:', data);
                     const categories = ['privateFrontends', 'searchEngines', 'other'];
                     
                     categories.forEach(category => {
                         const container = document.getElementById(category);
+                        if (!container) {
+                            console.error(`Container for ${category} not found`);
+                            return;
+                        }
+                        if (!data[category] || !Array.isArray(data[category])) {
+                            console.error(`Invalid data for ${category}`);
+                            return;
+                        }
                         data[category].forEach(item => {
                             const ul = document.createElement('ul');
                             const li = document.createElement('li');
@@ -60,7 +75,10 @@
                         });
                     });
                 })
-                .catch(error => console.error('Error fetching data:', error));
+                .catch(error => {
+                    console.error('Error fetching or processing data:', error);
+                    document.body.innerHTML += `<p>Error loading data. Please check the console for more information.</p>`;
+                });
         });
     </script>
 </body>
