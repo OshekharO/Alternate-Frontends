@@ -1,14 +1,11 @@
-@font-face {
-    font-family: Proto;
-    /*src: url(fonts/0xProto-Regular.woff2);*/
-    src: url(Modeseven-L3n5.ttf);
-	font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
 body {
     background-color: #121212;
-    font-family: Proto;
-    font-size: 1.2em;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
     height: 100vh;
     display: flex;
     margin: 0;
