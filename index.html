@@ -25,7 +25,7 @@
         <div id="searchEngines"></div>
 
         <h2>Other</h2>
-        <div id="services"></div>
+        <div id="other"></div>
     </main>
     <footer>2024 <a href="https://github.com/OshekharO/Alternate-Frontends">Saksham Shekher</a></footer>
 
@@ -34,7 +34,7 @@
             fetch('data.json')
                 .then(response => response.json())
                 .then(data => {
-                    const categories = ['privateFrontends', 'searchEngines', 'services'];
+                    const categories = ['privateFrontends', 'searchEngines', 'other'];
                     
                     categories.forEach(category => {
                         const container = document.getElementById(category);
