@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Proto;
+    /*src: url(fonts/0xProto-Regular.woff2);*/
+    src: url(Modeseven-L3n5.ttf);
+	font-display: swap;
+}
+
+body {
+    background-color: #121212;
+    font-family: Proto;
+    font-size: 1.2em;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+}
+
+h1,h2 {
+    color: #c5f1b8;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: #84e270;
+}
+
+li {
+    color: #CCC;
+    word-wrap: break-word;
+    list-style: square;
+}
+
+table,tr,td {
+    border-collapse: collapse;
+    color: white;
+    border: solid thin;
+    padding: 0.5rem;
+}
+
+.posts a {
+    display: block;
+    margin: 1rem;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+time {
+    color: lightblue;
+}
+
+main {
+    margin: 0 1em;
+}
+
+header {
+    text-align: center;
+    margin: 0.5em;
+}
+
+footer {
+    margin-top: auto;
+    color: white;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    main a[href="/blog"] {
+        float: right;
+    }
+}
