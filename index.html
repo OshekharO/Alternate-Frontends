@@ -8,56 +8,277 @@
     <meta name="author" content="Saksham Shekher">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alternate Index | Privacy-Friendly Services and Frontends</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="http://alternate.is-local.org/">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://alternate.is-local.org/">
-    <meta property="og:title" content="Alternate Index | Privacy-Friendly Services and Frontends">
-    <meta property="og:description" content="Discover privacy-friendly alternatives to popular services and frontends. Explore our curated list of secure search engines and open-source tools.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://alternate.is-local.org/">
-    <meta property="twitter:title" content="Alternate Index | Privacy-Friendly Services and Frontends">
-    <meta property="twitter:description" content="Discover privacy-friendly alternatives to popular services and frontends. Explore our curated list of secure search engines and open-source tools.">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="/" aria-label="Home">Home</a>
-            <a href="https://saksham.thedev.id" aria-label="About Saksham">About</a>
-            <a href="https://uncoder.eu.org" aria-label="Privacy Tools">Tools</a>
-            <a href="https://t.me/OshekherO" aria-label="Contact Saksham on Telegram">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Alternate Index</h1>
-        
-        <section aria-labelledby="private-frontends">
-            <h2 id="private-frontends">Private Frontends</h2>
-            <div id="privateFrontends"></div>
-        </section>
-
-        <section aria-labelledby="search-engines">
-            <h2 id="search-engines">Search Engines</h2>
-            <div id="searchEngines"></div>
-        </section>
-
-        <section aria-labelledby="other-services">
-            <h2 id="other-services">Other</h2>
-            <div id="other"></div>
-        </section>
-    </main>
-    <footer>
-        <p> 2024 <a href="https://github.com/OshekharO/Alternate-Frontends" aria-label="GitHub repository for Alternate Frontends">Saksham Shekher</a></p>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        },
+                        accent: {
+                            50: '#fdf4ff',
+                            100: '#fae8ff',
+                            200: '#f5d0fe',
+                            300: '#f0abfc',
+                            400: '#e879f9',
+                            500: '#d946ef',
+                            600: '#c026d3',
+                            700: '#a21caf',
+                            800: '#86198f',
+                            900: '#701a75',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .dark ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0ea5e9;
+            border-radius: 10px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #38bdf8;
+        }
+        
+        /* Smooth transitions */
+        * {
+            transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen font-sans">
+    <!-- Theme Toggle -->
+    <div class="fixed top-6 right-6 z-50">
+        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180" id="themeToggle" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
+        <div class="container mx-auto px-4 py-4">
+            <nav class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-shield-alt text-primary-500 text-xl"></i>
+                    <span class="text-lg font-semibold">Alternate Index</span>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                    <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
+                        <i class="fas fa-home text-sm"></i>
+                        Home
+                    </a>
+                    <a href="https://saksham.thedev.id" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
+                        <i class="fas fa-user text-sm"></i>
+                        About
+                    </a>
+                    <a href="https://uncoder.eu.org" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
+                        <i class="fas fa-tools text-sm"></i>
+                        Tools
+                    </a>
+                    <a href="https://t.me/OshekherO" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
+                        <i class="fas fa-paper-plane text-sm"></i>
+                        Contact
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Hero Section -->
+        <section class="text-center mb-12 animate-fade-in">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
+                Alternate Index
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Discover privacy-friendly alternatives to popular services and frontends. 
+                Explore our curated list of secure search engines and open-source tools.
+            </p>
+        </section>
+
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-slide-up">
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2" id="privateFrontendsCount">0</div>
+                <div class="text-gray-600 dark:text-gray-400 font-medium">Private Frontends</div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2" id="searchEnginesCount">0</div>
+                <div class="text-gray-600 dark:text-gray-400 font-medium">Search Engines</div>
+            </div>
+            <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700 text-center">
+                <div class="text-3xl font-bold text-primary-600 dark:text-primary-400 mb-2" id="otherCount">0</div>
+                <div class="text-gray-600 dark:text-gray-400 font-medium">Other Services</div>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-8 animate-slide-up">
+            <div class="relative max-w-2xl mx-auto">
+                <input type="text" id="searchInput" placeholder="Search for privacy tools and services..." 
+                       class="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-xl pl-12 pr-4 py-3 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-800 transition-colors duration-300 shadow-sm">
+                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Private Frontends Section -->
+        <section aria-labelledby="private-frontends" class="mb-12 animate-slide-up">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-eye-slash text-primary-600 dark:text-primary-400"></i>
+                </div>
+                <h2 id="private-frontends" class="text-2xl font-bold text-gray-900 dark:text-white">Private Frontends</h2>
+            </div>
+            <div id="privateFrontends" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </section>
+
+        <!-- Search Engines Section -->
+        <section aria-labelledby="search-engines" class="mb-12 animate-slide-up">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-accent-100 dark:bg-accent-900 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-search text-accent-600 dark:text-accent-400"></i>
+                </div>
+                <h2 id="search-engines" class="text-2xl font-bold text-gray-900 dark:text-white">Search Engines</h2>
+            </div>
+            <div id="searchEngines" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </section>
+
+        <!-- Other Services Section -->
+        <section aria-labelledby="other-services" class="mb-12 animate-slide-up">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-cube text-green-600 dark:text-green-400"></i>
+                </div>
+                <h2 id="other-services" class="text-2xl font-bold text-gray-900 dark:text-white">Other Services</h2>
+            </div>
+            <div id="other" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loading" class="text-center py-12">
+            <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary-500 border-t-transparent"></div>
+            <div class="mt-4 text-gray-600 dark:text-gray-400 text-lg">Loading privacy tools...</div>
+        </div>
+
+        <!-- Error State -->
+        <div id="error" class="hidden text-center py-12">
+            <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 max-w-md mx-auto">
+                <i class="fas fa-exclamation-triangle text-red-600 dark:text-red-400 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-red-800 dark:text-red-200 mb-2">Failed to Load Data</h3>
+                <p class="text-red-700 dark:text-red-300">Please check your connection and try again.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 mt-12">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-600 dark:text-gray-400 text-sm">
+                    © 2024 <a href="https://github.com/OshekharO/Alternate-Frontends" 
+                    class="text-primary-600 dark:text-primary-400 hover:underline font-medium">Saksham Shekher</a>
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://github.com/OshekharO" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
+                        <i class="fab fa-github text-lg"></i>
+                    </a>
+                    <a href="https://t.me/OshekherO" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
+                        <i class="fab fa-telegram text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script>
+        // Theme management
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.classList.toggle('dark', savedTheme === 'dark');
+            updateThemeIcon(savedTheme);
+        }
+
+        function toggleTheme() {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateThemeIcon(isDark ? 'dark' : 'light');
+        }
+
+        function updateThemeIcon(theme) {
+            const icon = $('#themeToggle i');
+            icon.removeClass('fa-moon fa-sun');
+            icon.addClass(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+            $('#themeToggle').attr('title', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+        }
+
+        // Search functionality
+        function filterItems() {
+            const searchTerm = $('#searchInput').val().toLowerCase();
+            $('.service-card').each(function() {
+                const text = $(this).text().toLowerCase();
+                $(this).toggle(text.includes(searchTerm));
+            });
+        }
+
+        $(document).ready(function() {
+            initTheme();
+            
+            $('#themeToggle').click(toggleTheme);
+            
+            // Search functionality
+            $('#searchInput').on('input', filterItems);
+            
+            // Load data
             fetch('data.json')
                 .then(response => {
                     if (!response.ok) {
@@ -67,43 +288,55 @@
                 })
                 .then(data => {
                     console.log('Data fetched successfully:', data);
+                    $('#loading').hide();
+                    
                     const categories = ['privateFrontends', 'searchEngines', 'other'];
                     
                     categories.forEach(category => {
-                        const container = document.getElementById(category);
-                        if (!container) {
+                        const container = $(`#${category}`);
+                        if (!container.length) {
                             console.error(`Container for ${category} not found`);
                             return;
                         }
+                        
                         if (!data[category] || !Array.isArray(data[category])) {
                             console.error(`Invalid data for ${category}`);
                             return;
                         }
+                        
+                        // Update count
+                        $(`#${category}Count`).text(data[category].length);
+                        
                         data[category].forEach(item => {
-                            const ul = document.createElement('ul');
-                            const li = document.createElement('li');
-                            const a = document.createElement('a');
-                            
-                            a.href = item.url;
-                            a.textContent = item.name;
-                            
-                            if (item.description) {
-                                const span = document.createElement('span');
-                                span.textContent = ` ${item.description}`;
-                                li.appendChild(a);
-                                li.appendChild(span);
-                            } else {
-                                li.appendChild(a);
-                            }
-                            
-                            ul.appendChild(li);
-                            container.appendChild(ul);
+                            const card = $(`
+                                <div class="service-card bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                                    <div class="flex items-start gap-3">
+                                        <div class="w-10 h-10 bg-primary-50 dark:bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
+                                            <i class="fas fa-external-link-alt text-primary-600 dark:text-primary-400 text-sm"></i>
+                                        </div>
+                                        <div class="flex-1 min-w-0">
+                                            <a href="${item.url}" 
+                                               class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors line-clamp-1 block"
+                                               target="_blank" rel="noopener noreferrer">
+                                                ${item.name}
+                                            </a>
+                                            ${item.description ? `
+                                                <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 line-clamp-2">
+                                                    ${item.description}
+                                                </p>
+                                            ` : ''}
+                                        </div>
+                                    </div>
+                                </div>
+                            `);
+                            container.append(card);
                         });
                     });
                 })
                 .catch(error => {
                     console.error('Error fetching or processing data:', error);
-                    document.body.innerHTML += `<p>Error loading data. Please check the console for more information.</p>`;
+                    $('#loading').hide();
+                    $('#error').removeClass('hidden');
                 });
         });
     </script>
