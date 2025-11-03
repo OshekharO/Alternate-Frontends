@@ -1,43 +1,155 @@
 {
     "privateFrontends": [
-        {"name": "Pussthecat", "url": "https://pussthecat.org", "description": "provides access to open source services"},
-        {"name": "Aishiteiru", "url": "https://aishiteiru.moe"},
-        {"name": "Perennialte", "url": "https://perennialte.ch", "description": "providing free access to open-source web services"},
-        {"name": "Hyperreal", "url": "https://hyperreal.coffee"},
-        {"name": "Mint", "url": "https://mint.lgbt", "description": "providing privacy-respecting FOSS services"},
-        {"name": "Drgns", "url": "https://drgns.space", "description": "free libre services for everyone"},
-        {"name": "PrivacyRedirect", "url": "https://privacyredirect.com"},
-        {"name": "Whatever", "url": "https://whatever.social", "description": "collection of FOSS alternative"},
-        {"name": "Kavin", "url": "https://kavin.rocks"},
-        {"name": "NerdVPN", "url": "https://nerdvpn.de", "description": "privacy focused services and alternative frontends"},
-        {"name": "Reallyaweso", "url": "https://reallyaweso.me", "description": "trying to provide as many useful services"},
-        {"name": "Einfachzocken", "url": "https://www.einfachzocken.eu"},
-        {"name": "FrontendFriendly", "url": "https://frontendfriendly.xyz", "description": "host privacy friendly frontends"},
-        {"name": "PrivacyDev", "url": "https://privacydev.net"},
-        {"name": "Ggtyler", "url": "https://www.ggtyler.dev", "description": "here for a frontend and want more?"},
-        {"name": "Ducks", "url": "https://ducks.party"},
-        {"name": "Vern", "url": "https://vern.cc", "description": "host a lot of services"},
-        {"name": "Lunar", "url": "https://lunar.icu", "description": "Data protection is our top priority"},
-        {"name": "Lumaeris", "url": "https://lumaeris.com"},
-        {"name": "Neco", "url": "https://neco.lol", "description": "hosts various services"},
-        {"name": "Bloat", "url": "https://bloat.cat"}
+        {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
+            "name": "Drgns",
+            "url": "https://drgns.space",
+            "description": "free libre services for everyone"
+        },
+        {
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
+        },
+        {
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
+        },
+        {
+            "name": "Mint",
+            "url": "https://mint.lgbt",
+            "description": "providing privacy-respecting FOSS services"
+        },
+        {
+            "name": "PrivacyRedirect",
+            "url": "https://privacyredirect.com"
+        },
+        {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
+        },
+        {
+            "name": "Hyperreal",
+            "url": "https://hyperreal.coffee"
+        },
+        {
+            "name": "FrontendFriendly",
+            "url": "https://frontendfriendly.xyz",
+            "description": "host privacy friendly frontends"
+        },
+        {
+            "name": "Reallyaweso",
+            "url": "https://reallyaweso.me",
+            "description": "trying to provide as many useful services"
+        },
+        {
+            "name": "Whatever",
+            "url": "https://whatever.social",
+            "description": "collection of FOSS alternative"
+        },
+        {
+            "name": "NerdVPN",
+            "url": "https://nerdvpn.de",
+            "description": "privacy focused services and alternative frontends"
+        },
+        {
+            "name": "Ducks",
+            "url": "https://ducks.party"
+        },
+        {
+            "name": "Neco",
+            "url": "https://neco.lol",
+            "description": "hosts various services"
+        },
+        {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
+        },
+        {
+            "name": "PrivacyDev",
+            "url": "https://privacydev.net"
+        },
+        {
+            "name": "Bloat",
+            "url": "https://bloat.cat"
+        },
+        {
+            "name": "Lumaeris",
+            "url": "https://lumaeris.com"
+        },
+        {
+            "name": "Lunar",
+            "url": "https://lunar.icu",
+            "description": "Data protection is our top priority"
+        }
     ],
     "searchEngines": [
-        {"name": "DuckDuckGo", "url": "https://duckduckgo.com", "description": "the most well-known private search engine."},
-        {"name": "Startpage", "url": "https://www.startpage.com", "description": "google without the tracking."},
-        {"name": "Presearch", "url": "https://presearch.com", "description": "is a community-powered, decentralized search engine."},
-        {"name": "Brave", "url": "https://search.brave.com", "description": "private search engine developed by Brave Software."},
-        {"name": "Ecosia", "url": "https://www.ecosia.org", "description": "berlin-based private and charitable search engine."},
-        {"name": "YouCare", "url": "https://youcare.world", "description": "is a France-based charitable search engine."}
+        {
+            "name": "DuckDuckGo",
+            "url": "https://duckduckgo.com",
+            "description": "the most well-known private search engine."
+        },
+        {
+            "name": "Brave",
+            "url": "https://search.brave.com",
+            "description": "private search engine developed by Brave Software."
+        },
+        {
+            "name": "Startpage",
+            "url": "https://www.startpage.com",
+            "description": "google without the tracking."
+        },
+        {
+            "name": "YouCare",
+            "url": "https://youcare.world",
+            "description": "is a France-based charitable search engine."
+        }
     ],
     "other": [
-        {"name": "Mass-CC-Checker", "url": "https://github.com/OshekharO/MASS-CC-CHECKER", "description": "A credit card mass checker tool."},
-        {"name": "KE1-CC-Checker", "url": "https://github.com/OshekharO/KE1-CC-CHECKER", "description": "is an credit card checker tool."},
-        {"name": "CF-Reverse-Proxy", "url": "https://github.com/OshekharO/CF-REVERSE-PROXY", "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."},
-        {"name": "Web-Indexer", "url": "https://github.com/OshekharO/Web-Indexer", "description": "A Simple Website Indexer With Some Awesome Site's Listed."},
-        {"name": "News-API", "url": "https://github.com/OshekharO/News-API", "description": "This is a simple server that serves as a unified API endpoint."},
-        {"name": "OmniScrape", "url": "https://github.com/OshekharO/OmniScrape", "description": "Your Universal Web Search Companion."},
-        {"name": "Mobile-Console", "url": "https://github.com/OshekharO/Mobile-Console", "description": "A lightweight, in-browser developer console for mobile."},
-        {"name": "GPT-AI", "url": "https://github.com/OshekharO/GPT-AI", "description": "The official GPT AI repository | various collection of powerful language models"}
+        {
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+        },
+        {
+            "name": "KE1-CC-Checker",
+            "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
+            "description": "is an credit card checker tool."
+        },
+        {
+            "name": "OmniScrape",
+            "url": "https://github.com/OshekharO/OmniScrape",
+            "description": "Your Universal Web Search Companion."
+        },
+        {
+            "name": "News-API",
+            "url": "https://github.com/OshekharO/News-API",
+            "description": "This is a simple server that serves as a unified API endpoint."
+        },
+        {
+            "name": "Mass-CC-Checker",
+            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
+            "description": "A credit card mass checker tool."
+        },
+        {
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+        },
+        {
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
+        },
+        {
+            "name": "GPT-AI",
+            "url": "https://github.com/OshekharO/GPT-AI",
+            "description": "The official GPT AI repository | various collection of powerful language models"
+        }
     ]
 }
