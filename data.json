@@ -1,14 +1,9 @@
 {
     "privateFrontends": [
         {
-            "name": "Neco",
-            "url": "https://neco.lol",
-            "description": "hosts various services"
-        },
-        {
-            "name": "FrontendFriendly",
-            "url": "https://frontendfriendly.xyz",
-            "description": "host privacy friendly frontends"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "Drgns",
@@ -16,22 +11,22 @@
             "description": "free libre services for everyone"
         },
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
+            "name": "FrontendFriendly",
+            "url": "https://frontendfriendly.xyz",
+            "description": "host privacy friendly frontends"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "name": "Neco",
+            "url": "https://neco.lol",
+            "description": "hosts various services"
         },
         {
             "name": "Ducks",
             "url": "https://ducks.party"
         },
         {
-            "name": "Ggtyler",
-            "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Pussthecat",
@@ -39,17 +34,18 @@
             "description": "provides access to open source services"
         },
         {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
+            "name": "Hyperreal",
+            "url": "https://hyperreal.coffee"
+        },
+        {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
         },
         {
             "name": "Reallyaweso",
             "url": "https://reallyaweso.me",
             "description": "trying to provide as many useful services"
-        },
-        {
-            "name": "Hyperreal",
-            "url": "https://hyperreal.coffee"
         },
         {
             "name": "Mint",
@@ -66,13 +62,12 @@
             "description": "Data protection is our top priority"
         },
         {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
+            "name": "Bloat",
+            "url": "https://bloat.cat"
         },
         {
-            "name": "Whatever",
-            "url": "https://whatever.social",
-            "description": "collection of FOSS alternative"
+            "name": "Lumaeris",
+            "url": "https://lumaeris.com"
         },
         {
             "name": "NerdVPN",
@@ -80,12 +75,17 @@
             "description": "privacy focused services and alternative frontends"
         },
         {
-            "name": "Lumaeris",
-            "url": "https://lumaeris.com"
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
         },
         {
             "name": "PrivacyDev",
             "url": "https://privacydev.net"
+        },
+        {
+            "name": "Whatever",
+            "url": "https://whatever.social",
+            "description": "collection of FOSS alternative"
         }
     ],
     "searchEngines": [
@@ -112,19 +112,24 @@
     ],
     "other": [
         {
-            "name": "Web-Indexer",
-            "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
-        },
-        {
             "name": "Mass-CC-Checker",
             "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
             "description": "A credit card mass checker tool."
         },
         {
+            "name": "KE1-CC-Checker",
+            "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
+            "description": "is an credit card checker tool."
+        },
+        {
             "name": "CF-Reverse-Proxy",
             "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
             "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+        },
+        {
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
         },
         {
             "name": "News-API",
@@ -135,11 +140,6 @@
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
-        },
-        {
-            "name": "KE1-CC-Checker",
-            "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
-            "description": "is an credit card checker tool."
         },
         {
             "name": "Mobile-Console",
