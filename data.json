@@ -1,18 +1,18 @@
 {
     "privateFrontends": [
         {
-            "name": "FrontendFriendly",
-            "url": "https://frontendfriendly.xyz",
-            "description": "host privacy friendly frontends"
-        },
-        {
             "name": "Drgns",
             "url": "https://drgns.space",
             "description": "free libre services for everyone"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "name": "Ducks",
+            "url": "https://ducks.party"
+        },
+        {
+            "name": "FrontendFriendly",
+            "url": "https://frontendfriendly.xyz",
+            "description": "host privacy friendly frontends"
         },
         {
             "name": "Neco",
@@ -20,18 +20,22 @@
             "description": "hosts various services"
         },
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
-        },
-        {
-            "name": "Ducks",
-            "url": "https://ducks.party"
-        },
-        {
             "name": "Ggtyler",
             "url": "https://www.ggtyler.dev",
             "description": "here for a frontend and want more?"
+        },
+        {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
+        },
+        {
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "Reallyaweso",
@@ -39,17 +43,17 @@
             "description": "trying to provide as many useful services"
         },
         {
-            "name": "Pussthecat",
-            "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
+            "name": "Hyperreal",
+            "url": "https://hyperreal.coffee"
         },
         {
             "name": "PrivacyRedirect",
             "url": "https://privacyredirect.com"
         },
         {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
         },
         {
             "name": "Mint",
@@ -57,26 +61,17 @@
             "description": "providing privacy-respecting FOSS services"
         },
         {
-            "name": "Lunar",
-            "url": "https://lunar.icu",
-            "description": "Data protection is our top priority"
+            "name": "Bloat",
+            "url": "https://bloat.cat"
         },
         {
             "name": "Lumaeris",
             "url": "https://lumaeris.com"
         },
         {
-            "name": "Hyperreal",
-            "url": "https://hyperreal.coffee"
-        },
-        {
             "name": "NerdVPN",
             "url": "https://nerdvpn.de",
             "description": "privacy focused services and alternative frontends"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
         },
         {
             "name": "Whatever",
@@ -86,6 +81,11 @@
         {
             "name": "PrivacyDev",
             "url": "https://privacydev.net"
+        },
+        {
+            "name": "Lunar",
+            "url": "https://lunar.icu",
+            "description": "Data protection is our top priority"
         }
     ],
     "searchEngines": [
@@ -95,14 +95,14 @@
             "description": "the most well-known private search engine."
         },
         {
-            "name": "Brave",
-            "url": "https://search.brave.com",
-            "description": "private search engine developed by Brave Software."
-        },
-        {
             "name": "Startpage",
             "url": "https://www.startpage.com",
             "description": "google without the tracking."
+        },
+        {
+            "name": "Brave",
+            "url": "https://search.brave.com",
+            "description": "private search engine developed by Brave Software."
         },
         {
             "name": "YouCare",
@@ -112,19 +112,14 @@
     ],
     "other": [
         {
-            "name": "CF-Reverse-Proxy",
-            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
-            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+            "name": "KE1-CC-Checker",
+            "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
+            "description": "is an credit card checker tool."
         },
         {
             "name": "News-API",
             "url": "https://github.com/OshekharO/News-API",
             "description": "This is a simple server that serves as a unified API endpoint."
-        },
-        {
-            "name": "Mass-CC-Checker",
-            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
-            "description": "A credit card mass checker tool."
         },
         {
             "name": "Mobile-Console",
@@ -137,9 +132,14 @@
             "description": "Your Universal Web Search Companion."
         },
         {
-            "name": "KE1-CC-Checker",
-            "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
-            "description": "is an credit card checker tool."
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+        },
+        {
+            "name": "Mass-CC-Checker",
+            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
+            "description": "A credit card mass checker tool."
         },
         {
             "name": "Web-Indexer",
