@@ -1,9 +1,8 @@
 {
     "privateFrontends": [
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Drgns",
@@ -11,13 +10,8 @@
             "description": "free libre services for everyone"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
-        },
-        {
-            "name": "Neco",
-            "url": "https://neco.lol",
-            "description": "hosts various services"
+            "name": "Ducks",
+            "url": "https://ducks.party"
         },
         {
             "name": "FrontendFriendly",
@@ -25,22 +19,14 @@
             "description": "host privacy friendly frontends"
         },
         {
-            "name": "Ducks",
-            "url": "https://ducks.party"
+            "name": "Neco",
+            "url": "https://neco.lol",
+            "description": "hosts various services"
         },
         {
-            "name": "Reallyaweso",
-            "url": "https://reallyaweso.me",
-            "description": "trying to provide as many useful services"
-        },
-        {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
-        },
-        {
-            "name": "Pussthecat",
-            "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "Ggtyler",
@@ -48,17 +34,27 @@
             "description": "here for a frontend and want more?"
         },
         {
+            "name": "Reallyaweso",
+            "url": "https://reallyaweso.me",
+            "description": "trying to provide as many useful services"
+        },
+        {
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
+        },
+        {
             "name": "Mint",
             "url": "https://mint.lgbt",
             "description": "providing privacy-respecting FOSS services"
         },
         {
-            "name": "PrivacyRedirect",
-            "url": "https://privacyredirect.com"
+            "name": "Hyperreal",
+            "url": "https://hyperreal.coffee"
         },
         {
-            "name": "Lumaeris",
-            "url": "https://lumaeris.com"
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
         },
         {
             "name": "Lunar",
@@ -66,17 +62,21 @@
             "description": "Data protection is our top priority"
         },
         {
+            "name": "PrivacyRedirect",
+            "url": "https://privacyredirect.com"
+        },
+        {
+            "name": "Bloat",
+            "url": "https://bloat.cat"
+        },
+        {
             "name": "Whatever",
             "url": "https://whatever.social",
             "description": "collection of FOSS alternative"
         },
         {
-            "name": "Hyperreal",
-            "url": "https://hyperreal.coffee"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
+            "name": "Lumaeris",
+            "url": "https://lumaeris.com"
         },
         {
             "name": "NerdVPN",
@@ -108,9 +108,9 @@
     ],
     "other": [
         {
-            "name": "Mobile-Console",
-            "url": "https://github.com/OshekharO/Mobile-Console",
-            "description": "A lightweight, in-browser developer console for mobile."
+            "name": "Mass-CC-Checker",
+            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
+            "description": "A credit card mass checker tool."
         },
         {
             "name": "News-API",
@@ -118,9 +118,9 @@
             "description": "This is a simple server that serves as a unified API endpoint."
         },
         {
-            "name": "Mass-CC-Checker",
-            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
-            "description": "A credit card mass checker tool."
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
         },
         {
             "name": "CF-Reverse-Proxy",
