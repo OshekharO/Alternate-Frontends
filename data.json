@@ -1,18 +1,22 @@
 {
     "privateFrontends": [
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
+            "name": "FrontendFriendly",
+            "url": "https://frontendfriendly.xyz",
+            "description": "host privacy friendly frontends"
+        },
+        {
+            "name": "Neco",
+            "url": "https://neco.lol",
+            "description": "hosts various services"
+        },
+        {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Ducks",
             "url": "https://ducks.party"
-        },
-        {
-            "name": "FrontendFriendly",
-            "url": "https://frontendfriendly.xyz",
-            "description": "host privacy friendly frontends"
         },
         {
             "name": "Drgns",
@@ -20,13 +24,9 @@
             "description": "free libre services for everyone"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
-        },
-        {
-            "name": "Neco",
-            "url": "https://neco.lol",
-            "description": "hosts various services"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "Lunar",
@@ -43,18 +43,13 @@
             "url": "https://privacyredirect.com"
         },
         {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
+        },
+        {
             "name": "Ggtyler",
             "url": "https://www.ggtyler.dev",
             "description": "here for a frontend and want more?"
-        },
-        {
-            "name": "Pussthecat",
-            "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
-        },
-        {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
         },
         {
             "name": "Mint",
@@ -62,13 +57,18 @@
             "description": "providing privacy-respecting FOSS services"
         },
         {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
         },
         {
             "name": "Whatever",
             "url": "https://whatever.social",
             "description": "collection of FOSS alternative"
+        },
+        {
+            "name": "Bloat",
+            "url": "https://bloat.cat"
         },
         {
             "name": "NerdVPN",
@@ -86,14 +86,14 @@
     ],
     "searchEngines": [
         {
-            "name": "Brave",
-            "url": "https://search.brave.com",
-            "description": "private search engine developed by Brave Software."
-        },
-        {
             "name": "DuckDuckGo",
             "url": "https://duckduckgo.com",
             "description": "the most well-known private search engine."
+        },
+        {
+            "name": "Brave",
+            "url": "https://search.brave.com",
+            "description": "private search engine developed by Brave Software."
         },
         {
             "name": "Startpage",
@@ -107,6 +107,11 @@
         }
     ],
     "other": [
+        {
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
+        },
         {
             "name": "CF-Reverse-Proxy",
             "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
@@ -126,11 +131,6 @@
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
-        },
-        {
-            "name": "Mobile-Console",
-            "url": "https://github.com/OshekharO/Mobile-Console",
-            "description": "A lightweight, in-browser developer console for mobile."
         },
         {
             "name": "News-API",
