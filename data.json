@@ -21,13 +21,13 @@
             "description": "providing free access to open-source web services"
         },
         {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
             "name": "Ggtyler",
             "url": "https://www.ggtyler.dev",
             "description": "here for a frontend and want more?"
-        },
-        {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Ducks",
@@ -39,17 +39,13 @@
             "description": "Data protection is our top priority"
         },
         {
+            "name": "PrivacyRedirect",
+            "url": "https://privacyredirect.com"
+        },
+        {
             "name": "Reallyaweso",
             "url": "https://reallyaweso.me",
             "description": "trying to provide as many useful services"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
-        },
-        {
-            "name": "PrivacyRedirect",
-            "url": "https://privacyredirect.com"
         },
         {
             "name": "Pussthecat",
@@ -62,9 +58,21 @@
             "description": "providing privacy-respecting FOSS services"
         },
         {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
+        },
+        {
+            "name": "Bloat",
+            "url": "https://bloat.cat"
+        },
+        {
             "name": "NerdVPN",
             "url": "https://nerdvpn.de",
             "description": "privacy focused services and alternative frontends"
+        },
+        {
+            "name": "Lumaeris",
+            "url": "https://lumaeris.com"
         },
         {
             "name": "Whatever",
@@ -72,28 +80,20 @@
             "description": "collection of FOSS alternative"
         },
         {
-            "name": "Lumaeris",
-            "url": "https://lumaeris.com"
-        },
-        {
             "name": "Hyperreal",
             "url": "https://hyperreal.coffee"
-        },
-        {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
         }
     ],
     "searchEngines": [
         {
-            "name": "Brave",
-            "url": "https://search.brave.com",
-            "description": "private search engine developed by Brave Software."
-        },
-        {
             "name": "DuckDuckGo",
             "url": "https://duckduckgo.com",
             "description": "the most well-known private search engine."
+        },
+        {
+            "name": "Brave",
+            "url": "https://search.brave.com",
+            "description": "private search engine developed by Brave Software."
         },
         {
             "name": "Startpage",
@@ -108,19 +108,9 @@
     ],
     "other": [
         {
-            "name": "CF-Reverse-Proxy",
-            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
-            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
-        },
-        {
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
-        },
-        {
-            "name": "Mobile-Console",
-            "url": "https://github.com/OshekharO/Mobile-Console",
-            "description": "A lightweight, in-browser developer console for mobile."
         },
         {
             "name": "Mass-CC-Checker",
@@ -136,6 +126,16 @@
             "name": "Web-Indexer",
             "url": "https://github.com/OshekharO/Web-Indexer",
             "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+        },
+        {
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
+        },
+        {
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
         },
         {
             "name": "KE1-CC-Checker",
