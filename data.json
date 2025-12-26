@@ -1,14 +1,9 @@
 {
     "privateFrontends": [
         {
-            "name": "Neco",
-            "url": "https://neco.lol",
-            "description": "hosts various services"
-        },
-        {
-            "name": "Drgns",
-            "url": "https://drgns.space",
-            "description": "free libre services for everyone"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "FrontendFriendly",
@@ -20,9 +15,14 @@
             "url": "https://aishiteiru.moe"
         },
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
+            "name": "Drgns",
+            "url": "https://drgns.space",
+            "description": "free libre services for everyone"
+        },
+        {
+            "name": "Neco",
+            "url": "https://neco.lol",
+            "description": "hosts various services"
         },
         {
             "name": "Ducks",
@@ -33,6 +33,11 @@
             "url": "https://kavin.rocks"
         },
         {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
+        },
+        {
             "name": "Reallyaweso",
             "url": "https://reallyaweso.me",
             "description": "trying to provide as many useful services"
@@ -40,6 +45,15 @@
         {
             "name": "Bloat",
             "url": "https://bloat.cat"
+        },
+        {
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
+        },
+        {
+            "name": "PrivacyRedirect",
+            "url": "https://privacyredirect.com"
         },
         {
             "name": "Mint",
@@ -52,27 +66,13 @@
             "description": "Data protection is our top priority"
         },
         {
-            "name": "Pussthecat",
-            "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
-        },
-        {
-            "name": "PrivacyRedirect",
-            "url": "https://privacyredirect.com"
-        },
-        {
-            "name": "Ggtyler",
-            "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
+            "name": "Lumaeris",
+            "url": "https://lumaeris.com"
         },
         {
             "name": "NerdVPN",
             "url": "https://nerdvpn.de",
             "description": "privacy focused services and alternative frontends"
-        },
-        {
-            "name": "Lumaeris",
-            "url": "https://lumaeris.com"
         },
         {
             "name": "Whatever",
@@ -108,11 +108,6 @@
     ],
     "other": [
         {
-            "name": "Web-Indexer",
-            "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
-        },
-        {
             "name": "News-API",
             "url": "https://github.com/OshekharO/News-API",
             "description": "This is a simple server that serves as a unified API endpoint."
@@ -131,6 +126,11 @@
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
+        },
+        {
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
         },
         {
             "name": "CF-Reverse-Proxy",
