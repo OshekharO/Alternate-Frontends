@@ -11,36 +11,17 @@
             "description": "providing free access to open-source web services"
         },
         {
-            "name": "Drgns",
-            "url": "https://drgns.space",
-            "description": "free libre services for everyone"
-        },
-        {
             "name": "Neco",
             "url": "https://neco.lol",
             "description": "hosts various services"
-        },
-        {
-            "name": "Ggtyler",
-            "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
-        },
-        {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Ducks",
             "url": "https://ducks.party"
         },
         {
-            "name": "Mint",
-            "url": "https://mint.lgbt",
-            "description": "providing privacy-respecting FOSS services"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Reallyaweso",
@@ -52,8 +33,19 @@
             "url": "https://privacyredirect.com"
         },
         {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
+            "name": "Mint",
+            "url": "https://mint.lgbt",
+            "description": "providing privacy-respecting FOSS services"
+        },
+        {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
+        },
+        {
+            "name": "Lunar",
+            "url": "https://lunar.icu",
+            "description": "Data protection is our top priority"
         },
         {
             "name": "Pussthecat",
@@ -61,9 +53,12 @@
             "description": "provides access to open source services"
         },
         {
-            "name": "Lunar",
-            "url": "https://lunar.icu",
-            "description": "Data protection is our top priority"
+            "name": "Bloat",
+            "url": "https://bloat.cat"
+        },
+        {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
         },
         {
             "name": "Lumaeris",
@@ -113,6 +108,21 @@
             "description": "A credit card mass checker tool."
         },
         {
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
+        },
+        {
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+        },
+        {
+            "name": "News-API",
+            "url": "https://github.com/OshekharO/News-API",
+            "description": "This is a simple server that serves as a unified API endpoint."
+        },
+        {
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
@@ -121,21 +131,6 @@
             "name": "Web-Indexer",
             "url": "https://github.com/OshekharO/Web-Indexer",
             "description": "A Simple Website Indexer With Some Awesome Site's Listed."
-        },
-        {
-            "name": "CF-Reverse-Proxy",
-            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
-            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
-        },
-        {
-            "name": "Mobile-Console",
-            "url": "https://github.com/OshekharO/Mobile-Console",
-            "description": "A lightweight, in-browser developer console for mobile."
-        },
-        {
-            "name": "News-API",
-            "url": "https://github.com/OshekharO/News-API",
-            "description": "This is a simple server that serves as a unified API endpoint."
         },
         {
             "name": "KE1-CC-Checker",
