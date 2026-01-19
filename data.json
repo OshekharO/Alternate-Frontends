@@ -6,11 +6,6 @@
             "description": "hosts various services"
         },
         {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
-        },
-        {
             "name": "FrontendFriendly",
             "url": "https://frontendfriendly.xyz",
             "description": "host privacy friendly frontends"
@@ -21,16 +16,21 @@
             "description": "here for a frontend and want more?"
         },
         {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
             "name": "Ducks",
             "url": "https://ducks.party"
         },
         {
-            "name": "PrivacyRedirect",
-            "url": "https://privacyredirect.com"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "name": "PrivacyRedirect",
+            "url": "https://privacyredirect.com"
         },
         {
             "name": "Reallyaweso",
@@ -38,14 +38,18 @@
             "description": "trying to provide as many useful services"
         },
         {
+            "name": "Mint",
+            "url": "https://mint.lgbt",
+            "description": "providing privacy-respecting FOSS services"
+        },
+        {
             "name": "Lunar",
             "url": "https://lunar.icu",
             "description": "Data protection is our top priority"
         },
         {
-            "name": "Mint",
-            "url": "https://mint.lgbt",
-            "description": "providing privacy-respecting FOSS services"
+            "name": "Bloat",
+            "url": "https://bloat.cat"
         },
         {
             "name": "Pussthecat",
@@ -53,26 +57,22 @@
             "description": "provides access to open source services"
         },
         {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
-        },
-        {
-            "name": "Whatever",
-            "url": "https://whatever.social",
-            "description": "collection of FOSS alternative"
-        },
-        {
             "name": "Lumaeris",
             "url": "https://lumaeris.com"
+        },
+        {
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
         },
         {
             "name": "NerdVPN",
             "url": "https://nerdvpn.de",
             "description": "privacy focused services and alternative frontends"
+        },
+        {
+            "name": "Whatever",
+            "url": "https://whatever.social",
+            "description": "collection of FOSS alternative"
         },
         {
             "name": "Hyperreal",
@@ -98,11 +98,6 @@
     ],
     "other": [
         {
-            "name": "Web-Indexer",
-            "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
-        },
-        {
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
@@ -111,6 +106,11 @@
             "name": "Mobile-Console",
             "url": "https://github.com/OshekharO/Mobile-Console",
             "description": "A lightweight, in-browser developer console for mobile."
+        },
+        {
+            "name": "News-API",
+            "url": "https://github.com/OshekharO/News-API",
+            "description": "This is a simple server that serves as a unified API endpoint."
         },
         {
             "name": "CF-Reverse-Proxy",
@@ -123,9 +123,9 @@
             "description": "A credit card mass checker tool."
         },
         {
-            "name": "News-API",
-            "url": "https://github.com/OshekharO/News-API",
-            "description": "This is a simple server that serves as a unified API endpoint."
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
         },
         {
             "name": "KE1-CC-Checker",
