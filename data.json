@@ -11,12 +11,12 @@
             "description": "hosts various services"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
-        },
-        {
             "name": "Kavin",
             "url": "https://kavin.rocks"
+        },
+        {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
         },
         {
             "name": "Reallyaweso",
@@ -24,9 +24,13 @@
             "description": "trying to provide as many useful services"
         },
         {
-            "name": "Lunar",
-            "url": "https://lunar.icu",
-            "description": "Data protection is our top priority"
+            "name": "Pussthecat",
+            "url": "https://pussthecat.org",
+            "description": "provides access to open source services"
+        },
+        {
+            "name": "Ducks",
+            "url": "https://ducks.party"
         },
         {
             "name": "Ggtyler",
@@ -34,40 +38,27 @@
             "description": "here for a frontend and want more?"
         },
         {
-            "name": "Pussthecat",
-            "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
+            "name": "Mint",
+            "url": "https://mint.lgbt",
+            "description": "providing privacy-respecting FOSS services"
+        },
+        {
+            "name": "Lunar",
+            "url": "https://lunar.icu",
+            "description": "Data protection is our top priority"
         },
         {
             "name": "Lumaeris",
             "url": "https://lumaeris.com"
         },
         {
-            "name": "Mint",
-            "url": "https://mint.lgbt",
-            "description": "providing privacy-respecting FOSS services"
-        },
-        {
-            "name": "Ducks",
-            "url": "https://ducks.party"
-        },
-        {
-            "name": "Whatever",
-            "url": "https://whatever.social",
-            "description": "collection of FOSS alternative"
+            "name": "Bloat",
+            "url": "https://bloat.cat"
         },
         {
             "name": "NerdVPN",
             "url": "https://nerdvpn.de",
             "description": "privacy focused services and alternative frontends"
-        },
-        {
-            "name": "Bloat",
-            "url": "https://bloat.cat"
-        },
-        {
-            "name": "Hyperreal",
-            "url": "https://hyperreal.coffee"
         }
     ],
     "searchEngines": [
@@ -89,19 +80,14 @@
     ],
     "other": [
         {
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+        },
+        {
             "name": "OmniScrape",
             "url": "https://github.com/OshekharO/OmniScrape",
             "description": "Your Universal Web Search Companion."
-        },
-        {
-            "name": "Mobile-Console",
-            "url": "https://github.com/OshekharO/Mobile-Console",
-            "description": "A lightweight, in-browser developer console for mobile."
-        },
-        {
-            "name": "Mass-CC-Checker",
-            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
-            "description": "A credit card mass checker tool."
         },
         {
             "name": "News-API",
@@ -109,14 +95,19 @@
             "description": "This is a simple server that serves as a unified API endpoint."
         },
         {
-            "name": "Web-Indexer",
-            "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
-        },
-        {
             "name": "CF-Reverse-Proxy",
             "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
             "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
+        },
+        {
+            "name": "Mass-CC-Checker",
+            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
+            "description": "A credit card mass checker tool."
+        },
+        {
+            "name": "Mobile-Console",
+            "url": "https://github.com/OshekharO/Mobile-Console",
+            "description": "A lightweight, in-browser developer console for mobile."
         },
         {
             "name": "KE1-CC-Checker",
