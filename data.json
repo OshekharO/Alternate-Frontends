@@ -11,12 +11,17 @@
             "description": "providing free access to open-source web services"
         },
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "name": "Kavin",
+            "url": "https://kavin.rocks"
         },
         {
             "name": "Ducks",
             "url": "https://ducks.party"
+        },
+        {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
         },
         {
             "name": "Reallyaweso",
@@ -24,13 +29,13 @@
             "description": "trying to provide as many useful services"
         },
         {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
             "name": "Lunar",
             "url": "https://lunar.icu",
             "description": "Data protection is our top priority"
-        },
-        {
-            "name": "Kavin",
-            "url": "https://kavin.rocks"
         },
         {
             "name": "Mint",
@@ -40,11 +45,6 @@
         {
             "name": "Lumaeris",
             "url": "https://lumaeris.com"
-        },
-        {
-            "name": "Ggtyler",
-            "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
         },
         {
             "name": "Pussthecat",
@@ -75,14 +75,19 @@
     ],
     "other": [
         {
+            "name": "Mass-CC-Checker",
+            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
+            "description": "A credit card mass checker tool."
+        },
+        {
+            "name": "OmniScrape",
+            "url": "https://github.com/OshekharO/OmniScrape",
+            "description": "Your Universal Web Search Companion."
+        },
+        {
             "name": "News-API",
             "url": "https://github.com/OshekharO/News-API",
             "description": "This is a simple server that serves as a unified API endpoint."
-        },
-        {
-            "name": "CF-Reverse-Proxy",
-            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
-            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
         },
         {
             "name": "Web-Indexer",
@@ -95,14 +100,9 @@
             "description": "A lightweight, in-browser developer console for mobile."
         },
         {
-            "name": "OmniScrape",
-            "url": "https://github.com/OshekharO/OmniScrape",
-            "description": "Your Universal Web Search Companion."
-        },
-        {
-            "name": "Mass-CC-Checker",
-            "url": "https://github.com/OshekharO/MASS-CC-CHECKER",
-            "description": "A credit card mass checker tool."
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
         },
         {
             "name": "KE1-CC-Checker",
