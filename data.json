@@ -1,8 +1,9 @@
 {
     "privateFrontends": [
         {
-            "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "name": "Perennialte",
+            "url": "https://perennialte.ch",
+            "description": "providing free access to open-source web services"
         },
         {
             "name": "Ducks",
@@ -12,21 +13,6 @@
             "name": "Neco",
             "url": "https://neco.lol",
             "description": "hosts various services"
-        },
-        {
-            "name": "Perennialte",
-            "url": "https://perennialte.ch",
-            "description": "providing free access to open-source web services"
-        },
-        {
-            "name": "Ggtyler",
-            "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
-        },
-        {
-            "name": "Reallyaweso",
-            "url": "https://reallyaweso.me",
-            "description": "trying to provide as many useful services"
         },
         {
             "name": "Kavin",
@@ -41,6 +27,20 @@
             "name": "Pussthecat",
             "url": "https://pussthecat.org",
             "description": "provides access to open source services"
+        },
+        {
+            "name": "Aishiteiru",
+            "url": "https://aishiteiru.moe"
+        },
+        {
+            "name": "Reallyaweso",
+            "url": "https://reallyaweso.me",
+            "description": "trying to provide as many useful services"
+        },
+        {
+            "name": "Ggtyler",
+            "url": "https://www.ggtyler.dev",
+            "description": "here for a frontend and want more?"
         },
         {
             "name": "Mint",
@@ -75,19 +75,14 @@
     ],
     "other": [
         {
-            "name": "CF-Reverse-Proxy",
-            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
-            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
-        },
-        {
             "name": "News-API",
             "url": "https://github.com/OshekharO/News-API",
             "description": "This is a simple server that serves as a unified API endpoint."
         },
         {
-            "name": "Web-Indexer",
-            "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+            "name": "OmniScrape",
+            "url": "https://github.com/OshekharO/OmniScrape",
+            "description": "Your Universal Web Search Companion."
         },
         {
             "name": "Mass-CC-Checker",
@@ -95,14 +90,19 @@
             "description": "A credit card mass checker tool."
         },
         {
+            "name": "Web-Indexer",
+            "url": "https://github.com/OshekharO/Web-Indexer",
+            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+        },
+        {
             "name": "Mobile-Console",
             "url": "https://github.com/OshekharO/Mobile-Console",
             "description": "A lightweight, in-browser developer console for mobile."
         },
         {
-            "name": "OmniScrape",
-            "url": "https://github.com/OshekharO/OmniScrape",
-            "description": "Your Universal Web Search Companion."
+            "name": "CF-Reverse-Proxy",
+            "url": "https://github.com/OshekharO/CF-REVERSE-PROXY",
+            "description": "Workers-Proxy is a lightweight Javascript Reverse Proxy based on Cloudflare Workers."
         },
         {
             "name": "KE1-CC-Checker",
