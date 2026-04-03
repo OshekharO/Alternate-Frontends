@@ -7,8 +7,19 @@
     <meta name="keywords" content="privacy, frontends, search engines, open-source, alternatives, secure services">
     <meta name="author" content="Saksham Shekher">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Alternate Index | Privacy-Friendly Services and Frontends">
+    <meta property="og:description" content="Discover privacy-friendly alternatives to popular services and frontends. Explore our curated list of secure search engines and open-source tools.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Alternate Index | Privacy-Friendly Services and Frontends">
+    <meta name="twitter:description" content="Discover privacy-friendly alternatives to popular services and frontends.">
     <title>Alternate Index | Privacy-Friendly Services and Frontends</title>
     
+    <!-- Preconnect hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter font (referenced in Tailwind config) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -95,7 +106,7 @@
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen font-sans">
     <!-- Theme Toggle -->
     <div class="fixed top-6 right-6 z-50">
-        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180" id="themeToggle" title="Toggle theme">
+        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180" id="themeToggle" title="Toggle theme" aria-label="Switch to light mode">
             <i class="fas fa-moon"></i>
         </button>
     </div>
@@ -160,20 +171,24 @@
         </div>
 
         <!-- Search Bar -->
-        <div class="mb-8 animate-slide-up">
+        <div class="mb-8 animate-slide-up" role="search">
             <div class="relative max-w-2xl mx-auto">
-                <input type="text" id="searchInput" placeholder="Search for privacy tools and services..." 
+                <input type="text" id="searchInput" placeholder="Search for privacy tools and services..."
+                       aria-label="Search privacy tools and services"
                        class="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-xl pl-12 pr-4 py-3 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-800 transition-colors duration-300 shadow-sm">
-                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400">
+                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true">
                     <i class="fas fa-search"></i>
                 </div>
             </div>
         </div>
 
+        <!-- Content sections (shown after data loads) -->
+        <div id="contentSections" class="hidden">
+
         <!-- Private Frontends Section -->
         <section aria-labelledby="private-frontends" class="mb-12 animate-slide-up">
             <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                <div class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center" aria-hidden="true">
                     <i class="fas fa-eye-slash text-primary-600 dark:text-primary-400"></i>
                 </div>
                 <h2 id="private-frontends" class="text-2xl font-bold text-gray-900 dark:text-white">Private Frontends</h2>
@@ -184,7 +199,7 @@
         <!-- Search Engines Section -->
         <section aria-labelledby="search-engines" class="mb-12 animate-slide-up">
             <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-accent-100 dark:bg-accent-900 rounded-lg flex items-center justify-center">
+                <div class="w-10 h-10 bg-accent-100 dark:bg-accent-900 rounded-lg flex items-center justify-center" aria-hidden="true">
                     <i class="fas fa-search text-accent-600 dark:text-accent-400"></i>
                 </div>
                 <h2 id="search-engines" class="text-2xl font-bold text-gray-900 dark:text-white">Search Engines</h2>
@@ -195,7 +210,7 @@
         <!-- Other Services Section -->
         <section aria-labelledby="other-services" class="mb-12 animate-slide-up">
             <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center">
+                <div class="w-10 h-10 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center" aria-hidden="true">
                     <i class="fas fa-cube text-green-600 dark:text-green-400"></i>
                 </div>
                 <h2 id="other-services" class="text-2xl font-bold text-gray-900 dark:text-white">Other Services</h2>
@@ -203,14 +218,24 @@
             <div id="other" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
         </section>
 
+        </div><!-- /#contentSections -->
+
+        <!-- No Results -->
+        <div id="noResults" class="hidden text-center py-8" role="status" aria-live="polite">
+            <div class="text-gray-400 dark:text-gray-500 mb-3" aria-hidden="true">
+                <i class="fas fa-search text-4xl"></i>
+            </div>
+            <p class="text-gray-600 dark:text-gray-400 text-lg">No results found for &ldquo;<span id="searchQuery" class="font-medium text-gray-800 dark:text-gray-200"></span>&rdquo;</p>
+        </div>
+
         <!-- Loading State -->
-        <div id="loading" class="text-center py-12">
+        <div id="loading" class="text-center py-12" role="status" aria-live="polite">
             <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-primary-500 border-t-transparent"></div>
             <div class="mt-4 text-gray-600 dark:text-gray-400 text-lg">Loading privacy tools...</div>
         </div>
 
         <!-- Error State -->
-        <div id="error" class="hidden text-center py-12">
+        <div id="error" class="hidden text-center py-12" role="alert">
             <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 max-w-md mx-auto">
                 <i class="fas fa-exclamation-triangle text-red-600 dark:text-red-400 text-3xl mb-4"></i>
                 <h3 class="text-xl font-semibold text-red-800 dark:text-red-200 mb-2">Failed to Load Data</h3>
@@ -224,7 +249,7 @@
         <div class="container mx-auto px-4 py-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    © 2024 <a href="https://github.com/OshekharO/Alternate-Frontends" 
+                    © <span id="copyrightYear">2024</span> <a href="https://github.com/OshekharO/Alternate-Frontends" 
                     class="text-primary-600 dark:text-primary-400 hover:underline font-medium">Saksham Shekher</a>
                 </p>
                 <div class="flex gap-4">
@@ -250,34 +275,60 @@
 
         function toggleTheme() {
             const isDark = document.documentElement.classList.toggle('dark');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            updateThemeIcon(isDark ? 'dark' : 'light');
+            const theme = isDark ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+            updateThemeIcon(theme);
         }
 
         function updateThemeIcon(theme) {
-            const icon = $('#themeToggle i');
-            icon.removeClass('fa-moon fa-sun');
-            icon.addClass(theme === 'dark' ? 'fa-sun' : 'fa-moon');
-            $('#themeToggle').attr('title', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+            const btn = $('#themeToggle');
+            const icon = btn.find('i');
+            const label = `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`;
+            icon.removeClass('fa-moon fa-sun').addClass(theme === 'dark' ? 'fa-sun' : 'fa-moon');
+            btn.attr({ title: label, 'aria-label': label });
         }
 
         // Search functionality
         function filterItems() {
-            const searchTerm = $('#searchInput').val().toLowerCase();
-            $('.service-card').each(function() {
-                const text = $(this).text().toLowerCase();
-                $(this).toggle(text.includes(searchTerm));
+            const searchTerm = $('#searchInput').val().toLowerCase().trim();
+            const categories = ['privateFrontends', 'searchEngines', 'other'];
+            let totalVisible = 0;
+
+            categories.forEach(category => {
+                let sectionVisible = 0;
+                $(`#${category} .service-card`).each(function() {
+                    const matches = !searchTerm || $(this).text().toLowerCase().includes(searchTerm);
+                    $(this).toggle(matches);
+                    if (matches) sectionVisible++;
+                });
+                $(`#${category}`).closest('section').toggle(!searchTerm || sectionVisible > 0);
+                totalVisible += sectionVisible;
             });
+
+            if (searchTerm) {
+                $('#searchQuery').text(searchTerm);
+            }
+            $('#noResults').toggle(searchTerm.length > 0 && totalVisible === 0);
         }
 
         $(document).ready(function() {
             initTheme();
-            
-            $('#themeToggle').click(toggleTheme);
-            
+
+            // Update copyright year dynamically
+            $('#copyrightYear').text(new Date().getFullYear());
+
+            $('#themeToggle').on('click', toggleTheme);
+
             // Search functionality
             $('#searchInput').on('input', filterItems);
-            
+
+            // Category-specific card icons
+            const categoryIcons = {
+                privateFrontends: 'fa-eye-slash',
+                searchEngines: 'fa-search',
+                other: 'fa-cube'
+            };
+
             // Load data
             fetch('data.json')
                 .then(response => {
@@ -287,54 +338,51 @@
                     return response.json();
                 })
                 .then(data => {
-                    console.log('Data fetched successfully:', data);
                     $('#loading').hide();
-                    
+                    $('#contentSections').removeClass('hidden');
+
                     const categories = ['privateFrontends', 'searchEngines', 'other'];
-                    
+
                     categories.forEach(category => {
                         const container = $(`#${category}`);
-                        if (!container.length) {
-                            console.error(`Container for ${category} not found`);
-                            return;
-                        }
-                        
-                        if (!data[category] || !Array.isArray(data[category])) {
-                            console.error(`Invalid data for ${category}`);
-                            return;
-                        }
-                        
+                        if (!container.length || !Array.isArray(data[category])) return;
+
                         // Update count
                         $(`#${category}Count`).text(data[category].length);
-                        
+
                         data[category].forEach(item => {
-                            const card = $(`
-                                <div class="service-card bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                                    <div class="flex items-start gap-3">
-                                        <div class="w-10 h-10 bg-primary-50 dark:bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <i class="fas fa-external-link-alt text-primary-600 dark:text-primary-400 text-sm"></i>
-                                        </div>
-                                        <div class="flex-1 min-w-0">
-                                            <a href="${item.url}" 
-                                               class="font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors line-clamp-1 block"
-                                               target="_blank" rel="noopener noreferrer">
-                                                ${item.name}
-                                            </a>
-                                            ${item.description ? `
-                                                <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 line-clamp-2">
-                                                    ${item.description}
-                                                </p>
-                                            ` : ''}
-                                        </div>
-                                    </div>
-                                </div>
-                            `);
+                            const iconClass = categoryIcons[category] || 'fa-external-link-alt';
+
+                            const iconWrap = $('<div>').addClass(
+                                'w-10 h-10 bg-primary-50 dark:bg-primary-900/30 rounded-lg flex items-center justify-center flex-shrink-0'
+                            ).attr('aria-hidden', 'true').append(
+                                $('<i>').addClass(`fas ${iconClass} text-primary-600 dark:text-primary-400 text-sm`)
+                            );
+
+                            const link = $('<a>')
+                                .attr({ href: item.url, target: '_blank', rel: 'noopener noreferrer' })
+                                .addClass('font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors line-clamp-1 block')
+                                .text(item.name);
+
+                            const content = $('<div>').addClass('flex-1 min-w-0').append(link);
+
+                            if (item.description) {
+                                content.append(
+                                    $('<p>').addClass('text-gray-600 dark:text-gray-400 text-sm mt-1 line-clamp-2').text(item.description)
+                                );
+                            }
+
+                            const card = $('<div>').addClass(
+                                'service-card bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 hover:-translate-y-1'
+                            ).append(
+                                $('<div>').addClass('flex items-start gap-3').append(iconWrap, content)
+                            );
+
                             container.append(card);
                         });
                     });
                 })
-                .catch(error => {
-                    console.error('Error fetching or processing data:', error);
+                .catch(() => {
                     $('#loading').hide();
                     $('#error').removeClass('hidden');
                 });
