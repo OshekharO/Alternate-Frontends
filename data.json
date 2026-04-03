@@ -8,43 +8,47 @@
         {
             "name": "Neco",
             "url": "https://neco.lol",
-            "description": "hosts various services"
+            "description": "hosts various privacy-friendly open-source services"
         },
         {
             "name": "Ducks",
-            "url": "https://ducks.party"
+            "url": "https://ducks.party",
+            "description": "provides a collection of privacy-friendly alternative frontends"
         },
         {
             "name": "Kavin",
-            "url": "https://kavin.rocks"
+            "url": "https://kavin.rocks",
+            "description": "hosts a variety of open-source alternative frontend services"
         },
         {
             "name": "Aishiteiru",
-            "url": "https://aishiteiru.moe"
+            "url": "https://aishiteiru.moe",
+            "description": "provides multiple privacy-respecting alternative frontend instances"
         },
         {
             "name": "Reallyaweso",
             "url": "https://reallyaweso.me",
-            "description": "trying to provide as many useful services"
+            "description": "aims to provide as many useful privacy-friendly services as possible"
         },
         {
             "name": "Lunar",
             "url": "https://lunar.icu",
-            "description": "Data protection is our top priority"
+            "description": "data protection is the top priority, offering secure alternative frontends"
         },
         {
             "name": "Ggtyler",
             "url": "https://www.ggtyler.dev",
-            "description": "here for a frontend and want more?"
+            "description": "offers a range of alternative frontend services and more"
         },
         {
             "name": "Pussthecat",
             "url": "https://pussthecat.org",
-            "description": "provides access to open source services"
+            "description": "provides access to a wide range of open-source services"
         },
         {
             "name": "Bloat",
-            "url": "https://bloat.cat"
+            "url": "https://bloat.cat",
+            "description": "hosts multiple privacy-friendly alternative frontend instances"
         },
         {
             "name": "Mint",
@@ -53,7 +57,8 @@
         },
         {
             "name": "Lumaeris",
-            "url": "https://lumaeris.com"
+            "url": "https://lumaeris.com",
+            "description": "offers a curated set of open-source privacy-friendly frontend services"
         }
     ],
     "searchEngines": [
@@ -70,7 +75,7 @@
         {
             "name": "YouCare",
             "url": "https://youcare.world",
-            "description": "is a France-based charitable search engine."
+            "description": "a France-based charitable search engine that plants trees with your searches."
         }
     ],
     "other": [
@@ -102,17 +107,17 @@
         {
             "name": "Web-Indexer",
             "url": "https://github.com/OshekharO/Web-Indexer",
-            "description": "A Simple Website Indexer With Some Awesome Site's Listed."
+            "description": "A comprehensive directory of websites and applications for manga, anime, movies, and more, with search, filtering, and bookmarking."
         },
         {
             "name": "KE1-CC-Checker",
             "url": "https://github.com/OshekharO/KE1-CC-CHECKER",
-            "description": "is an credit card checker tool."
+            "description": "A credit card checker tool for educational purposes, supporting bulk validation with live/dead categorization."
         },
         {
             "name": "GPT-AI",
             "url": "https://github.com/OshekharO/GPT-AI",
-            "description": "The official GPT AI repository | various collection of powerful language models"
+            "description": "A Node.js server integrating multiple chatbot APIs, offering a unified interface for various AI conversation models."
         }
     ]
 }
