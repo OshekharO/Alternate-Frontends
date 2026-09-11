@@ -101,40 +101,58 @@
         * {
             transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
         }
+
+        /* Respect prefers-reduced-motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, ::before, ::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 min-h-screen font-sans">
+    <!-- Skip to main content link for keyboard & screen reader accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary-600 focus:text-white focus:rounded-lg focus:shadow-lg focus:outline-none focus:ring-2 focus:ring-primary-400 font-medium transition-all">
+        Skip to main content
+    </a>
+
     <!-- Theme Toggle -->
     <div class="fixed top-6 right-6 z-50">
-        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180" id="themeToggle" title="Toggle theme" aria-label="Switch to light mode">
-            <i class="fas fa-moon"></i>
+        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900" id="themeToggle" title="Toggle theme" aria-label="Switch to light mode">
+            <i class="fas fa-moon" aria-hidden="true"></i>
         </button>
     </div>
 
     <!-- Header -->
     <header class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
         <div class="container mx-auto px-4 py-4">
-            <nav class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <nav class="flex flex-col sm:flex-row justify-between items-center gap-4" aria-label="Main Navigation">
                 <div class="flex items-center gap-2">
-                    <i class="fas fa-shield-alt text-primary-500 text-xl"></i>
+                    <i class="fas fa-shield-alt text-primary-500 text-xl" aria-hidden="true"></i>
                     <span class="text-lg font-semibold">Alternate Index</span>
                 </div>
                 <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-                    <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
-                        <i class="fas fa-home text-sm"></i>
+                    <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2 px-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fas fa-home text-sm" aria-hidden="true"></i>
                         Home
                     </a>
-                    <a href="https://saksham.thedev.id" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
-                        <i class="fas fa-user text-sm"></i>
+                    <a href="https://saksham.thedev.id" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2 px-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fas fa-user text-sm" aria-hidden="true"></i>
                         About
+                        <span class="sr-only"> (opens in a new tab)</span>
                     </a>
-                    <a href="https://uncoder.eu.org" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
-                        <i class="fas fa-tools text-sm"></i>
+                    <a href="https://uncoder.eu.org" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2 px-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fas fa-tools text-sm" aria-hidden="true"></i>
                         Tools
+                        <span class="sr-only"> (opens in a new tab)</span>
                     </a>
-                    <a href="https://t.me/OshekherO" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2">
-                        <i class="fas fa-paper-plane text-sm"></i>
+                    <a href="https://t.me/OshekherO" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2 px-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fas fa-paper-plane text-sm" aria-hidden="true"></i>
                         Contact
+                        <span class="sr-only"> (opens in a new tab)</span>
                     </a>
                 </div>
             </nav>
@@ -142,7 +160,10 @@
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8 max-w-6xl">
+    <main id="main-content" tabindex="-1" class="container mx-auto px-4 py-8 max-w-6xl focus:outline-none">
+        <!-- Live region for dynamic screen reader announcements -->
+        <div id="searchAnnouncer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
         <!-- Hero Section -->
         <section class="text-center mb-12 animate-fade-in">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
@@ -173,11 +194,20 @@
         <!-- Search Bar -->
         <div class="mb-8 animate-slide-up" role="search">
             <div class="relative max-w-2xl mx-auto">
-                <input type="text" id="searchInput" placeholder="Search for privacy tools and services..."
+                <input type="search" id="searchInput" placeholder="Search for privacy tools and services... (Press / to focus)"
                        aria-label="Search privacy tools and services"
-                       class="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-xl pl-12 pr-4 py-3 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:focus:ring-primary-800 transition-colors duration-300 shadow-sm">
-                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400" aria-hidden="true">
+                       autocomplete="off"
+                       class="w-full bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white rounded-xl pl-12 pr-20 py-3 focus:outline-none focus:border-primary-500 focus-visible:ring-2 focus-visible:ring-primary-500 transition-colors duration-300 shadow-sm">
+                <div class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 pointer-events-none" aria-hidden="true">
                     <i class="fas fa-search"></i>
+                </div>
+                <!-- Search Clear Button -->
+                <button type="button" id="clearSearch" class="hidden absolute right-12 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 p-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500" title="Clear search input" aria-label="Clear search input">
+                    <i class="fas fa-times text-sm" aria-hidden="true"></i>
+                </button>
+                <!-- Keyboard Shortcut Hint Badge -->
+                <div class="absolute right-4 top-1/2 -translate-y-1/2 hidden sm:flex items-center text-xs text-gray-400 bg-gray-100 dark:bg-gray-700 px-2 py-0.5 rounded border border-gray-200 dark:border-gray-600 pointer-events-none" aria-hidden="true" id="searchKbdHint">
+                    <kbd class="font-sans font-medium">/</kbd>
                 </div>
             </div>
         </div>
@@ -234,12 +264,16 @@
             <div class="mt-4 text-gray-600 dark:text-gray-400 text-lg">Loading privacy tools...</div>
         </div>
 
-        <!-- Error State -->
+        <!-- Error State with Retry Affordance -->
         <div id="error" class="hidden text-center py-12" role="alert">
             <div class="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl p-6 max-w-md mx-auto">
-                <i class="fas fa-exclamation-triangle text-red-600 dark:text-red-400 text-3xl mb-4"></i>
+                <i class="fas fa-exclamation-triangle text-red-600 dark:text-red-400 text-3xl mb-4" aria-hidden="true"></i>
                 <h3 class="text-xl font-semibold text-red-800 dark:text-red-200 mb-2">Failed to Load Data</h3>
-                <p class="text-red-700 dark:text-red-300">Please check your connection and try again.</p>
+                <p class="text-red-700 dark:text-red-300 mb-4">Please check your connection and try again.</p>
+                <button id="retryBtn" type="button" class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-medium px-4 py-2 rounded-lg transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900">
+                    <i class="fas fa-redo text-sm" aria-hidden="true"></i>
+                    Retry Loading
+                </button>
             </div>
         </div>
     </main>
@@ -249,15 +283,15 @@
         <div class="container mx-auto px-4 py-6">
             <div class="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p class="text-gray-600 dark:text-gray-400 text-sm">
-                    © <span id="copyrightYear">2024</span> <a href="https://github.com/OshekharO/Alternate-Frontends" 
-                    class="text-primary-600 dark:text-primary-400 hover:underline font-medium">Saksham Shekher</a>
+                    © <span id="copyrightYear">2024</span> <a href="https://github.com/OshekharO/Alternate-Frontends" target="_blank" rel="noopener noreferrer"
+                    class="text-primary-600 dark:text-primary-400 hover:underline font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-md">Saksham Shekher<span class="sr-only"> (opens in a new tab)</span></a>
                 </p>
                 <div class="flex gap-4">
-                    <a href="https://github.com/OshekharO" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
-                        <i class="fab fa-github text-lg"></i>
+                    <a href="https://github.com/OshekharO" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors p-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fab fa-github text-lg" aria-hidden="true"></i>
                     </a>
-                    <a href="https://t.me/OshekherO" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
-                        <i class="fab fa-telegram text-lg"></i>
+                    <a href="https://t.me/OshekherO" target="_blank" rel="noopener noreferrer" aria-label="Telegram profile (opens in a new tab)" class="text-gray-500 hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-400 transition-colors p-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
+                        <i class="fab fa-telegram text-lg" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -288,11 +322,19 @@
             btn.attr({ title: label, 'aria-label': label });
         }
 
-        // Search functionality
+        // Search filtering and announcements
+        let announceTimeout;
         function filterItems() {
             const searchTerm = $('#searchInput').val().toLowerCase().trim();
             const categories = ['privateFrontends', 'searchEngines', 'other'];
             let totalVisible = 0;
+
+            // Toggle clear button visibility based on input value
+            $('#clearSearch').toggleClass('hidden', $('#searchInput').val().length === 0);
+            $('#searchKbdHint').toggleClass('hidden sm:flex', $('#searchInput').val().length === 0);
+            if ($('#searchInput').val().length > 0) {
+                $('#searchKbdHint').addClass('hidden').removeClass('sm:flex');
+            }
 
             categories.forEach(category => {
                 let sectionVisible = 0;
@@ -309,27 +351,39 @@
                 $('#searchQuery').text(searchTerm);
             }
             $('#noResults').toggle(searchTerm.length > 0 && totalVisible === 0);
+
+            // Announce search results count to screen readers (debounced)
+            clearTimeout(announceTimeout);
+            announceTimeout = setTimeout(() => {
+                const announcer = $('#searchAnnouncer');
+                if (searchTerm.length > 0) {
+                    if (totalVisible === 0) {
+                        announcer.text(`No results found for "${searchTerm}"`);
+                    } else {
+                        announcer.text(`Found ${totalVisible} result${totalVisible === 1 ? '' : 's'} for "${searchTerm}"`);
+                    }
+                } else {
+                    announcer.text('');
+                }
+            }, 500);
         }
 
-        $(document).ready(function() {
-            initTheme();
+        function clearSearch() {
+            $('#searchInput').val('').focus();
+            filterItems();
+        }
 
-            // Update copyright year dynamically
-            $('#copyrightYear').text(new Date().getFullYear());
+        // Data fetching with retry support
+        function loadData() {
+            $('#error').addClass('hidden');
+            $('#loading').removeClass('hidden');
 
-            $('#themeToggle').on('click', toggleTheme);
-
-            // Search functionality
-            $('#searchInput').on('input', filterItems);
-
-            // Category-specific card icons
             const categoryIcons = {
                 privateFrontends: 'fa-eye-slash',
                 searchEngines: 'fa-search',
                 other: 'fa-cube'
             };
 
-            // Load data
             fetch('data.json')
                 .then(response => {
                     if (!response.ok) {
@@ -338,7 +392,7 @@
                     return response.json();
                 })
                 .then(data => {
-                    $('#loading').hide();
+                    $('#loading').addClass('hidden');
                     $('#contentSections').removeClass('hidden');
 
                     const categories = ['privateFrontends', 'searchEngines', 'other'];
@@ -346,6 +400,8 @@
                     categories.forEach(category => {
                         const container = $(`#${category}`);
                         if (!container.length || !Array.isArray(data[category])) return;
+
+                        container.empty();
 
                         // Update count
                         $(`#${category}Count`).text(data[category].length);
@@ -361,8 +417,9 @@
 
                             const link = $('<a>')
                                 .attr({ href: item.url, target: '_blank', rel: 'noopener noreferrer' })
-                                .addClass('font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors line-clamp-1 block')
-                                .text(item.name);
+                                .addClass('font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors line-clamp-1 block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 rounded-md')
+                                .text(item.name)
+                                .append($('<span>').addClass('sr-only').text(' (opens in a new tab)'));
 
                             const content = $('<div>').addClass('flex-1 min-w-0').append(link);
 
@@ -381,11 +438,51 @@
                             container.append(card);
                         });
                     });
+
+                    // Re-apply any existing search query after loading
+                    filterItems();
                 })
                 .catch(() => {
-                    $('#loading').hide();
+                    $('#loading').addClass('hidden');
                     $('#error').removeClass('hidden');
                 });
+        }
+
+        $(document).ready(function() {
+            initTheme();
+
+            // Update copyright year dynamically
+            $('#copyrightYear').text(new Date().getFullYear());
+
+            $('#themeToggle').on('click', toggleTheme);
+
+            // Search input handlers
+            $('#searchInput').on('input', filterItems);
+            $('#clearSearch').on('click', clearSearch);
+
+            // Global keyboard shortcuts
+            $(document).on('keydown', function(e) {
+                // Focus search input when '/' is pressed (outside of text inputs/editable elements)
+                if (e.key === '/' && !$(e.target).is('input, textarea, select, [contenteditable="true"]')) {
+                    e.preventDefault();
+                    $('#searchInput').focus();
+                }
+                // Clear search on Escape key when focused on search input
+                if (e.key === 'Escape' && $(e.target).is('#searchInput')) {
+                    if ($('#searchInput').val().length > 0) {
+                        e.preventDefault();
+                        clearSearch();
+                    } else {
+                        $('#searchInput').blur();
+                    }
+                }
+            });
+
+            // Retry button handler
+            $('#retryBtn').on('click', loadData);
+
+            // Initial data fetch
+            loadData();
         });
     </script>
 </body>
