@@ -119,12 +119,7 @@
         Skip to main content
     </a>
 
-    <!-- Theme Toggle -->
-    <div class="fixed top-6 right-6 z-50">
-        <button class="bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:rotate-180 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900" id="themeToggle" title="Toggle theme" aria-label="Switch to light mode">
-            <i class="fas fa-moon" aria-hidden="true"></i>
-        </button>
-    </div>
+
 
     <!-- Header -->
     <header class="bg-white dark:bg-gray-800 shadow-sm border-b border-gray-200 dark:border-gray-700">
@@ -134,7 +129,7 @@
                     <i class="fas fa-shield-alt text-primary-500 text-xl" aria-hidden="true"></i>
                     <span class="text-lg font-semibold">Alternate Index</span>
                 </div>
-                <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
+                <div class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
                     <a href="/" class="text-gray-600 dark:text-gray-300 hover:text-primary-500 dark:hover:text-primary-400 font-medium transition-colors flex items-center gap-2 px-1 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500">
                         <i class="fas fa-home text-sm" aria-hidden="true"></i>
                         Home
@@ -154,6 +149,10 @@
                         Contact
                         <span class="sr-only"> (opens in a new tab)</span>
                     </a>
+                    <!-- Theme Toggle in Header Navigation -->
+                    <button class="bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 w-9 h-9 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary-500" id="themeToggle" title="Toggle theme" aria-label="Switch to light mode">
+                        <i class="fas fa-moon text-sm" aria-hidden="true"></i>
+                    </button>
                 </div>
             </nav>
         </div>
